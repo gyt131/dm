@@ -1,0 +1,51 @@
+
+CREATE TABLE Dim_Customer (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(50),
+    City VARCHAR(50),
+    State VARCHAR(50)
+);
+
+CREATE TABLE Dim_Product (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    Category VARCHAR(50)
+);
+
+CREATE TABLE Dim_Store (
+    StoreID INT PRIMARY KEY,
+    StoreName VARCHAR(50),
+    City VARCHAR(50),
+    State VARCHAR(50)
+);
+CREATE TABLE Dim_Time (
+    TimeID INT PRIMARY KEY,
+    Day INT,
+    Month INT,
+    Year INT
+);
+CREATE TABLE Fact_Sales (
+    SalesID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    StoreID INT,
+    TimeID INT,
+    Quantity INT,
+    Amount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Dim_Customer(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Dim_Product(ProductID),
+    FOREIGN KEY (StoreID) REFERENCES Dim_Store(StoreID),
+    FOREIGN KEY (TimeID) REFERENCES Dim_Time(TimeID)
+);
+
+INSERT INTO Dim_Customer VALUES (1,'Ravi','Vijayawada','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (2,'Sita','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Product VALUES (1,'Mango','Fruits');
+INSERT INTO Dim_Product VALUES (2,'Rice','Grains');
+INSERT INTO Dim_Store VALUES (1,'AP SuperMart','Vijayawada','Andhra Pradesh');
+INSERT INTO Dim_Store VALUES (2,'Guntur Market','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Time VALUES (1,21,10,2025);
+INSERT INTO Dim_Time VALUES (2,22,10,2025);
+INSERT INTO Fact_Sales VALUES (1,1,1,1,1,10,500.00);
+INSERT INTO Fact_Sales VALUES (2,2,2,2,2,5,250.00);
+
