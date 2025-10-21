@@ -1,0 +1,35 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+data = {
+    'X': [2, 2, 8, 5, 7, 6, 1, 4],
+    'Y': [10, 5, 7, 3, 5, 6, 5, 7]
+}
+
+df = pd.DataFrame(data)
+print("DATA SET:\n", df)
+plt.scatter(df['X'], df['Y'], c='blue', s=50)
+plt.title("K-Means (Original Data)")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(df)
+k = 2
+kmeans = KMeans(n_clusters=k, random_state=42)
+kmeans.fit(scaled_data)
+df['Cluster'] = kmeans.labels_
+centroids = kmeans.cluster_centers_
+centroids_unscaled = scaler.inverse_transform(centroids)
+plt.scatter(df['X'], df['Y'], c=df['Cluster'], cmap='rainbow', s=60)
+plt.scatter(centroids_unscaled[:, 0], centroids_unscaled[:, 1],
+            c='red', marker='X', s=200, label='Centroids')
+plt.title("K-Means Results")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.legend()
+plt.show()
+print("\nCluster Labels:\n", df['Cluster'].values)
+print("\nCentroids:\n", centroids_unscaled)
