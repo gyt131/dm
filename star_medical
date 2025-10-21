@@ -40,5 +40,46 @@ CREATE TABLE Fact_Visit (
     FOREIGN KEY (HospitalID) REFERENCES Dim_Hospital(HospitalID),
     FOREIGN KEY (TimeID) REFERENCES Dim_Time(TimeID)
 );
+INSERT INTO Dim_Patient VALUES (1,'Ravi',45,'Male');
+INSERT INTO Dim_Patient VALUES (2,'Sita',38,'Female');
+INSERT INTO Dim_Patient VALUES (3,'Kiran',50,'Male');
+INSERT INTO Dim_Patient VALUES (4,'Lakshmi',29,'Female');
+INSERT INTO Dim_Patient VALUES (5,'Manoj',60,'Male');
+INSERT INTO Dim_Patient VALUES (6,'Anjali',33,'Female');
+INSERT INTO Dim_Patient VALUES (7,'Vijay',40,'Male');
+INSERT INTO Dim_Patient VALUES (8,'Radha',27,'Female');
+INSERT INTO Dim_Doctor VALUES (1,'Dr. Ramesh','Cardiology');
+INSERT INTO Dim_Doctor VALUES (2,'Dr. Anitha','Orthopedics');
+INSERT INTO Dim_Doctor VALUES (3,'Dr. Prasad','Neurology');
+INSERT INTO Dim_Doctor VALUES (4,'Dr. Kavya','Gynecology');
+INSERT INTO Dim_Doctor VALUES (5,'Dr. Raj','Dermatology');
+INSERT INTO Dim_Doctor VALUES (6,'Dr. Meena','ENT');
+INSERT INTO Dim_Doctor VALUES (7,'Dr. Suresh','Pediatrics');
+INSERT INTO Dim_Doctor VALUES (8,'Dr. Latha','General Medicine');
+INSERT INTO Dim_Hospital VALUES (1,'Apollo Hospital','Machilipatnam','Andhra Pradesh');
+INSERT INTO Dim_Hospital VALUES (2,'KIMS Hospital','Machilipatnam','Andhra Pradesh');
+INSERT INTO Dim_Hospital VALUES (3,'Krishna Care','Vijayawada','Andhra Pradesh');
+INSERT INTO Dim_Hospital VALUES (4,'Guntur General','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Hospital VALUES (5,'Nellore Health','Nellore','Andhra Pradesh');
+INSERT INTO Dim_Hospital VALUES (6,'Hyderabad MedCare','Hyderabad','Telangana');
+INSERT INTO Dim_Hospital VALUES (7,'Bangalore Life','Bangalore','Karnataka');
+INSERT INTO Dim_Hospital VALUES (8,'Chennai Care','Chennai','Tamil Nadu');
+INSERT INTO Dim_Time VALUES (1,21,10,2025);
+INSERT INTO Dim_Time VALUES (2,22,10,2025);
+INSERT INTO Dim_Time VALUES (3,23,10,2025);
+INSERT INTO Dim_Time VALUES (4,24,10,2025);
+INSERT INTO Dim_Time VALUES (5,25,10,2025);
+INSERT INTO Dim_Time VALUES (6,26,10,2025);
+INSERT INTO Dim_Time VALUES (7,27,10,2025);
+INSERT INTO Dim_Time VALUES (8,28,10,2025);
+INSERT INTO Fact_Visit VALUES (1,1,1,1,1,'I10',2,1500.00);
+INSERT INTO Fact_Visit VALUES (2,2,2,2,2,'M16',1,800.00);
+INSERT INTO Fact_Visit VALUES (3,3,3,3,3,'G40',3,2000.00);
+INSERT INTO Fact_Visit VALUES (4,4,4,4,4,'O80',1,1200.00);
+INSERT INTO Fact_Visit VALUES (5,5,5,5,5,'L20',2,900.00);
+INSERT INTO Fact_Visit VALUES (6,6,6,6,6,'H60',1,700.00);
+INSERT INTO Fact_Visit VALUES (7,7,7,7,7,'J45',2,1500.00);
+INSERT INTO Fact_Visit VALUES (8,8,8,8,8,'I20',1,1100.00);
+
 
 
