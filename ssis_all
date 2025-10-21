@@ -1,0 +1,82 @@
+1.   for male-M ,female-M  UPPER([Gender]) == "MALE" ? "M" : (UPPER([Gender]) == "FEMALE" ? "F" : [Gender])
+
+2.    5 rows divisible - Script component 
+int rowCounter = 0;
+
+public override void Input0_ProcessInputRow(Input0Buffer Row)
+{
+    rowCounter++;
+    if (rowCounter % 5 == 0)
+    {
+        // Keep every 5th row
+        Row.DirectRowToOutputBuffer();
+    }
+    else
+    {
+        // Skip all other rows
+    }
+}
+3.   10% rows
+
+Random rand = new Random();
+public override void Input0_ProcessInputRow(Input0Buffer Row)
+{
+    double randomValue = rand.NextDouble();
+    if (randomValue <= 0.1)
+    {
+        Row.DirectRowToOutputBuffer(); // Send to output
+    }
+    else
+    {
+        Row.DirectRowToErrorOutput(); // Skip
+    }
+}
+
+4.    Remove special characters
+using System.Text.RegularExpressions;
+
+public override void Input0_ProcessInputRow(Input0Buffer Row)
+{
+    if (!Row.Remark_IsNull)
+    {
+        Row.Remark = Regex.Replace(Row.Remark, @"[^a-zA-Z0-9\s]", "");
+    }
+}
+5.    User:   SUBSTRING(mailid,1,FINDSTRING(mailid,"@",1) - 1)     Domain :   SUBSTRING(mailid,FINDSTRING(mailid,"@",1) + 1,LEN(mailid))
+6.    (ISNULL(salary) || TRIM(salary) == "" || (DT_I4)salary < 0) ? NULL(DT_I4) : (DT_I4)salary (it may department)
+7.    (DT_I4) DATEPART("yyyy", [order_date])
+(DT_I4) DATEPART("mm", [order_date])
+(DT_I4) DATEPART("dd", [order_date])
+8 .      telugu 
+public override void Input0_ProcessInputRow(Input0Buffer Row)
+{
+    if (!Row.Gender_IsNull) // Check for NULLs
+    {
+        string gender = Row.Gender.Trim().ToUpper();
+
+        if (gender == "MALE")
+            Row.Gender = "మగ";          // Or use Row.Gender_Telugu if you created a new column
+        else if (gender == "FEMALE")
+            Row.Gender = "ఆమె";        // Or Row.Gender_Telugu
+        else
+            Row.Gender = Row.Gender;    // Keep original value
+    }
+}
+9. mobile
+REPLICATE("*",LEN(mobile_number) - 4) + RIGHT(mobile_number,4)
+10.  [Weight] * 0.45359237
+11.   Normalization 
+12.   Normalization (Scores to DT_R8 (or DT_NUMERIC) in data conversion)
+min-max     ([Scores] - 50) / (100 - 50)
+z-score     ([Scores] - 70) / 15
+13.      [CountryCode] == "US" ? "United States" : ([CountryCode] == "IN" ? "India" : ([CountryCode] == "UK" ? "United Kingdom" : ([CountryCode] == "CA" ? "Canada" : "Unknown")))
+14.    Cur_agr      (DT_I4)(DATEDIFF("day",(DT_DATE)date_of_birth,GETDATE()) / 365.25)
+16.    'YYYY-MM-DD' → 'DD-MM-YYYY'   SUBSTRING([DateColumn], 9, 2) + "-" + SUBSTRING([DateColumn], 6, 2) + "-" + SUBSTRING([DateColumn], 1, 4)
+        'DD-MM-YYYY' → 'YYYY-MM-DD'    SUBSTRING([DateColumn], 7, 4) + "-" + SUBSTRING([DateColumn], 4, 2) + "-" + SUBSTRING([DateColumn], 1, 2)
+
+
+
+
+
+
+
