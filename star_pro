@@ -37,15 +37,44 @@ CREATE TABLE Fact_Sales (
     FOREIGN KEY (StoreID) REFERENCES Dim_Store(StoreID),
     FOREIGN KEY (TimeID) REFERENCES Dim_Time(TimeID)
 );
-
-INSERT INTO Dim_Customer VALUES (1,'Ravi','Vijayawada','Andhra Pradesh');
-INSERT INTO Dim_Customer VALUES (2,'Sita','Guntur','Andhra Pradesh');
-INSERT INTO Dim_Product VALUES (1,'Mango','Fruits');
-INSERT INTO Dim_Product VALUES (2,'Rice','Grains');
-INSERT INTO Dim_Store VALUES (1,'AP SuperMart','Vijayawada','Andhra Pradesh');
-INSERT INTO Dim_Store VALUES (2,'Guntur Market','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (1,'Ravi','Machilipatnam','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (2,'Sita','Machilipatnam','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (3,'Kiran','Vijayawada','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (4,'Lakshmi','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (5,'Manoj','Nellore','Andhra Pradesh');
+INSERT INTO Dim_Customer VALUES (6,'Anjali','Hyderabad','Telangana');
+INSERT INTO Dim_Customer VALUES (7,'Vijay','Bangalore','Karnataka');
+INSERT INTO Dim_Customer VALUES (8,'Radha','Chennai','Tamil Nadu');
+INSERT INTO Dim_Product VALUES (1,'Rice','Grocery');
+INSERT INTO Dim_Product VALUES (2,'Sugar','Grocery');
+INSERT INTO Dim_Product VALUES (3,'Oil','Grocery');
+INSERT INTO Dim_Product VALUES (4,'Soap','Personal Care');
+INSERT INTO Dim_Product VALUES (5,'Shampoo','Personal Care');
+INSERT INTO Dim_Product VALUES (6,'Mango','Fruit');
+INSERT INTO Dim_Product VALUES (7,'Milk','Dairy');
+INSERT INTO Dim_Product VALUES (8,'Bread','Bakery');
+INSERT INTO Dim_Store VALUES (1,'Machili SuperMart','Machilipatnam','Andhra Pradesh');
+INSERT INTO Dim_Store VALUES (2,'Krishna Mart','Vijayawada','Andhra Pradesh');
+INSERT INTO Dim_Store VALUES (3,'Guntur Bazaar','Guntur','Andhra Pradesh');
+INSERT INTO Dim_Store VALUES (4,'Nellore Plaza','Nellore','Andhra Pradesh');
+INSERT INTO Dim_Store VALUES (5,'Hyderabad Central','Hyderabad','Telangana');
+INSERT INTO Dim_Store VALUES (6,'Bangalore Mart','Bangalore','Karnataka');
+INSERT INTO Dim_Store VALUES (7,'Chennai Fresh','Chennai','Tamil Nadu');
+INSERT INTO Dim_Store VALUES (8,'Vizag SuperStore','Visakhapatnam','Andhra Pradesh');
 INSERT INTO Dim_Time VALUES (1,21,10,2025);
 INSERT INTO Dim_Time VALUES (2,22,10,2025);
+INSERT INTO Dim_Time VALUES (3,23,10,2025);
+INSERT INTO Dim_Time VALUES (4,24,10,2025);
+INSERT INTO Dim_Time VALUES (5,25,10,2025);
+INSERT INTO Dim_Time VALUES (6,26,10,2025);
+INSERT INTO Dim_Time VALUES (7,27,10,2025);
+INSERT INTO Dim_Time VALUES (8,28,10,2025);
 INSERT INTO Fact_Sales VALUES (1,1,1,1,1,10,500.00);
-INSERT INTO Fact_Sales VALUES (2,2,2,2,2,5,250.00);
+INSERT INTO Fact_Sales VALUES (2,2,2,1,2,5,250.00);
+INSERT INTO Fact_Sales VALUES (3,3,3,2,3,6,600.00);
+INSERT INTO Fact_Sales VALUES (4,4,4,3,4,4,200.00);
+INSERT INTO Fact_Sales VALUES (5,5,5,4,5,3,450.00);
+INSERT INTO Fact_Sales VALUES (6,6,6,5,6,8,800.00);
+INSERT INTO Fact_Sales VALUES (7,7,7,6,7,7,350.00);
+INSERT INTO Fact_Sales VALUES (8,8,8,7,8,9,270.00);
 
