@@ -1,0 +1,14 @@
+@relation association_example
+
+@attribute milk {yes,no}
+@attribute bread {yes,no}
+@attribute butter {yes,no}
+@attribute beer {yes,no}
+
+@data
+yes,yes,no,no
+yes,yes,yes,no
+no,yes,yes,yes
+yes,no,yes,no
+no,yes,no,yes
+yes,yes,no,yes
