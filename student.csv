@@ -1,0 +1,101 @@
+roll_number,name,age,year_of_study,cgpa,online_courses_done,mobile_number,mailid,regular_status,performance,technical_skills,curricular_participation,faculty_councellor,gender
+23481A0511,Margarethe Roskell,21,2,8,7,(321) 677-2067,margarethe.roskell@hotmail.com,N,BA,c#,workshops,STA-63,male
+23481A0504,Collie Tregian,23,2,6,16,(859) 229-6165,collie.tregian@hotmail.fr,Y,BA,c#,workshops,STA-14,female
+23481A0517,Caitlin Petti,20,2,5,17,(303) 026-7370,caitlin.petti@rediffmail.com,N,AA,noSQL,workshops,STA-34,male
+23481A0508,Mischa Brumbie,18,1,8,12,(865) 924-2096,mischa.brumbie@yahoo.com,Y,BA,full stack,workshops,STA-62,female
+23481A0506,Vikki Aplin,20,1,8,3,(860) 608-1759,vikki.aplin@gmail.com,N,AA,advanced java,workshops,STA-36,female
+23481A0520,Greer Gather,17,2,7,5,(718) 528-6013,greer.gather@hotmail.com,Y,AA,RPA,workshops,STA-70,female
+23481A0518,Dalia Aysh,22,3,9,6,(312) 456-5490,dalia.aysh@gmx.de,Y,BA,.NET,workshops,STA-5,female
+23481A0511,Lissa Zumbusch,21,2,6,9,(214) 868-5312,lissa.zumbusch@hotmail.com,Y,BA,noSQL,workshops,STA-16,male
+23481A0517,Shanta Trewinnard,17,3,5,3,(602) 766-0825,shanta.trewinnard@yahoo.com,N,A,sql,workshops,STA-50,male
+23481A0504,Fin Lopes,20,2,6,5,(563) 635-0389,fin.lopes@aol.com,Y,BA,sales force,workshops,STA-2,female
+23481A0508,Xenos Brymner,21,3,8,10,(978) 000-3501,xenos.brymner@gmail.com,Y,A,full stack,workshops,STA-95,female
+23481A0502,Stephannie Zanre,20,1,9,6,(817) 360-5431,stephannie.zanre@yahoo.com.sg,Y,BA,python,workshops,STA-86,female
+23481A0515,Kendall Bundey,18,2,9,2,(301) 744-7453,kendall.bundey@bigpond.net.au,N,A,RPA,workshops,STA-82,male
+23481A0509,Hewie Cretney,22,2,8,16,(864) 030-6378,hewie.cretney@libero.it,N,A,c#,workshops,STA-73,male
+23481A0513,Matty Muncey,19,2,5,5,(702) 058-7165,matty.muncey@comcast.net,Y,AA,advanced java,workshops,STA-47,male
+23481A0511,Elset Moulsdale,18,3,8,19,(202) 530-1071,elset.moulsdale@yahoo.com,N,A,full stack,workshops,STA-3,male
+23481A0505,Corabella Hattiff,18,2,9,0,(214) 624-2761,corabella.hattiff@gmail.com,N,A,sales force,workshops,STA-83,male
+23481A0519,Jehanna Romao,22,2,7,18,(310) 265-6092,jehanna.romao@gmail.com,Y,AA,noSQL,workshops,STA-44,male
+23481A0508,Tawnya Olwen,22,2,8,3,(559) 555-1782,tawnya.olwen@hotmail.com,N,AA,mongo db,workshops,STA-26,female
+23481A0502,Dallas Herreran,18,3,9,1,(336) 684-1570,dallas.herreran@hotmail.de,Y,A,sales force,workshops,STA-87,female
+23481A0501,Adriana Laverty,17,2,6,15,(610) 632-4715,adriana.laverty@hotmail.com,N,AA,.NET,workshops,STA-85,male
+23481A0512,Thorvald Erwin,24,1,6,17,(314) 198-9477,thorvald.erwin@yahoo.com,N,A,mongo db,workshops,STA-31,female
+23481A0509,Hanny Danaher,19,2,5,14,(318) 801-9798,hanny.danaher@gmail.com,Y,BA,jsp,workshops,STA-6,male
+23481A0515,Layla Mathevon,19,3,7,2,(863) 122-6202,layla.mathevon@yahoo.com,N,AA,.NET,workshops,STA-57,male
+23481A0520,Claresta MacDonnell,18,2,7,4,(503) 628-2082,claresta.macdonnell@gmail.com,N,BA,full stack,workshops,STA-94,female
+23481A0507,Algernon Hauxwell,19,3,9,3,(480) 195-4432,algernon.hauxwell@hotmail.it,N,BA,full stack,training programs,STA-100,male
+23481A0512,Sophey Baigent,17,1,7,17,(203) 612-4934,sophey.baigent@gmail.com,Y,BA,mongo db,training programs,STA-37,female
+23481A0503,Kristi Yoselevitch,18,1,6,19,(826) 247-6349,kristi.yoselevitch@yahoo.com,Y,BA,.NET,training programs,STA-42,male
+23481A0502,Analise Capper,24,3,5,10,(661) 405-2390,analise.capper@gmail.com,N,A,sales force,training programs,STA-11,female
+23481A0515,Torre Newbold,23,3,5,1,(405) 742-4068,torre.newbold@hotmail.com,N,BA,python,training programs,STA-77,male
+23481A0512,Dee dee Blance,19,3,7,7,(415) 743-3199,deedee.blance@aol.com,N,AA,powerBI,training programs,STA-99,female
+23481A0510,Ramona Vannar,19,2,5,14,(213) 628-1839,ramona.vannar@rediffmail.com,Y,A,full stack,training programs,STA-17,female
+23481A0509,Sonja Meadowcroft,23,1,6,13,(617) 369-3655,sonja.meadowcroft@live.it,Y,BA,RPA,training programs,STA-56,male
+23481A0515,Ricca Skelhorne,20,1,5,8,(916) 315-8692,ricca.skelhorne@hotmail.com,Y,AA,jsp,training programs,STA-43,male
+23481A0505,Jaquelin Kensit,18,1,6,15,(818) 367-1220,jaquelin.kensit@gmail.com,Y,A,powerBI,training programs,STA-52,male
+23481A0503,Erek Bernardotte,18,3,5,12,(512) 968-3369,erek.bernardotte@hotmail.com,Y,A,c#,training programs,STA-18,male
+23481A0514,Ede Gorioli,24,1,8,16,(617) 025-0037,ede.gorioli@hotmail.com,N,AA,sql,training programs,STA-33,female
+23481A0516,Cos Muller,18,2,7,17,(212) 279-7268,cos.muller@gmail.com,Y,AA,powerBI,training programs,STA-76,female
+23481A0507,Maggie Beceril,24,1,9,12,(952) 074-1937,maggie.beceril@hotmail.com,Y,AA,powerBI,training programs,STA-28,male
+23481A0520,Mycah McEvoy,20,3,5,9,(915) 813-7221,mycah.mcevoy@hotmail.com,N,BA,sql,training programs,STA-48,female
+23481A0510,Elwira Bembrick,17,3,5,5,(407) 337-7723,elwira.bembrick@free.fr,Y,A,noSQL,training programs,STA-13,female
+23481A0507,Baillie Cardenosa,24,2,5,18,(212) 886-5517,baillie.cardenosa@hotmail.com,Y,AA,.NET,training programs,STA-38,male
+23481A0509,Randi Bisgrove,24,3,9,10,(509) 082-8980,randi.bisgrove@yahoo.com,Y,AA,sql,training programs,STA-93,male
+23481A0501,Gilberte Lumsden,21,1,6,16,(713) 622-7770,gilberte.lumsden@hotmail.com,Y,A,full stack,training programs,STA-98,male
+23481A0512,Lombard Iacoboni,23,1,6,7,(330) 513-3036,lombard.iacoboni@yahoo.com,Y,BA,c#,training programs,STA-64,female
+23481A0503,Barth Gehrtz,23,2,8,0,(317) 287-0435,barth.gehrtz@gmail.com,N,BA,sql,training programs,STA-55,male
+23481A0508,Hedi Besantie,24,2,7,0,(706) 620-7560,hedi.besantie@gmail.com,Y,AA,RPA,training programs,STA-7,female
+23481A0502,Johnna Nelhams,17,1,6,11,(415) 334-8434,johnna.nelhams@planet.nl,N,BA,sql,training programs,STA-41,female
+23481A0511,Virginia Mateos,17,3,8,0,(205) 941-5241,virginia.mateos@msn.com,N,AA,RPA,training programs,STA-54,male
+23481A0506,Shannan Springate,23,3,9,14,(864) 467-1615,shannan.springate@yahoo.com,Y,BA,c#,training programs,STA-67,female
+23481A0516,Eldridge Duggleby,18,1,8,19,(864) 200-4295,eldridge.duggleby@yahoo.com,Y,A,sql,quizes,STA-92,female
+23481A0520,Donnamarie Logie,19,1,7,4,(609) 884-9431,donnamarie.logie@aol.com,N,AA,jsp,quizes,STA-24,female
+23481A0514,Krishnah Battison,18,3,6,3,(913) 249-5700,krishnah.battison@hotmail.com,Y,A,RPA,quizes,STA-97,female
+23481A0510,Wilma Andreone,21,2,7,8,(701) 829-9529,wilma.andreone@hotmail.com,Y,A,sql,quizes,STA-12,female
+23481A0509,Golda Wilflinger,19,1,6,9,(803) 443-0596,golda.wilflinger@hotmail.co.uk,Y,BA,jsp,quizes,STA-71,male
+23481A0516,Josy Devanny,19,2,8,5,(907) 169-7829,josy.devanny@hotmail.com,N,A,mongo db,quizes,STA-84,female
+23481A0519,Flore Monelle,17,2,5,6,(717) 064-6121,flore.monelle@hotmail.com,N,AA,c#,quizes,STA-45,male
+23481A0508,Cordie Jimmison,17,1,7,19,(915) 712-6596,cordie.jimmison@aol.com,N,A,advanced java,quizes,STA-39,female
+23481A0514,Gerty Kochel,18,1,7,8,(212) 442-9672,gerty.kochel@yahoo.com,N,BA,python,quizes,STA-49,female
+23481A0506,Tabby Kittman,19,2,8,8,(805) 573-0674,tabby.kittman@gmail.com,N,AA,.NET,quizes,STA-22,female
+23481A0511,Lana Toke,20,1,9,17,(801) 797-8184,lana.toke@gmail.com,N,BA,noSQL,quizes,STA-72,male
+23481A0501,Torrie Cardoo,18,1,9,4,(702) 208-1154,torrie.cardoo@hotmail.com,Y,BA,advanced java,quizes,STA-59,male
+23481A0506,Darsie Jillins,19,2,6,0,(713) 713-8705,darsie.jillins@gmail.com,Y,BA,mongo db,quizes,STA-46,female
+23481A0518,Annabela Plaschke,23,1,5,1,(406) 244-1174,annabela.plaschke@yahoo.com,N,BA,mongo db,quizes,STA-66,female
+23481A0519,Caron Dellatorre,18,3,9,7,(323) 969-0824,caron.dellatorre@hotmail.com,Y,AA,RPA,quizes,STA-60,male
+23481A0520,Josefa Tiptaft,21,2,9,16,(413) 148-0831,josefa.tiptaft@hotmail.com,Y,BA,python,quizes,STA-74,female
+23481A0518,Margot Gillford,22,2,6,13,(915) 827-3264,margot.gillford@yahoo.com,Y,BA,c#,quizes,STA-68,female
+23481A0513,Alyson Buttriss,18,1,8,3,(414) 890-3937,alyson.buttriss@yahoo.com,N,BA,RPA,quizes,STA-89,male
+23481A0504,Arabel Olufsen,23,3,9,7,(520) 408-2555,arabel.olufsen@aol.com,Y,BA,python,quizes,STA-53,female
+23481A0514,Randene Zanutti,19,2,8,8,(907) 027-3916,randene.zanutti@yahoo.com,N,A,powerBI,quizes,STA-79,female
+23481A0516,Brigitte Clausen-Thue,22,3,8,5,(415) 845-7282,brigitte.clausenthue@yahoo.com,Y,AA,jsp,quizes,STA-78,female
+23481A0510,Gael Jackes,17,2,5,3,(720) 253-8826,gael.jackes@hotmail.com,N,BA,advanced java,quizes,STA-65,female
+23481A0514,Robinett De Ruggiero,18,1,9,13,(949) 218-5757,robinett.deruggiero@gmail.com,Y,A,powerBI,quizes,STA-23,female
+23481A0504,Hunter Ewin,17,1,6,8,(304) 675-2649,hunter.ewin@yahoo.com,Y,A,sales force,quizes,STA-20,female
+23481A0517,Leena Wabey,18,3,5,2,(559) 676-6000,leena.wabey@aol.com,Y,A,noSQL,quizes,STA-30,male
+23481A0501,Winfield Winslet,21,1,5,10,(214) 846-7807,winfield.winslet@hotmail.com,Y,AA,mongo db,hakathons,STA-25,male
+23481A0519,Sianna Oxer,22,2,7,1,(757) 287-6968,sianna.oxer@yahoo.co.uk,N,A,python,hakathons,STA-32,male
+23481A0513,Allie Siviour,18,3,5,10,(716) 589-2606,allie.siviour@yahoo.co.uk,N,AA,advanced java,hakathons,STA-15,male
+23481A0518,Johna Prescot,24,3,9,18,(763) 958-5660,johna.prescot@free.fr,N,AA,powerBI,hakathons,STA-29,female
+23481A0505,Nicolis Sustin,23,3,5,2,(832) 418-3743,nicolis.sustin@uol.com.br,Y,A,noSQL,hakathons,STA-91,male
+23481A0503,Jae Hornig,17,3,9,14,(718) 055-2857,jae.hornig@gmail.com,Y,A,sql,hakathons,STA-1,male
+23481A0507,Kermie Jennings,23,2,6,18,(402) 984-6644,kermie.jennings@hotmail.com,N,BA,sales force,hakathons,STA-96,male
+23481A0513,Carma Reyne,21,3,6,19,(323) 629-2190,carma.reyne@gmail.com,N,AA,full stack,hakathons,STA-58,male
+23481A0501,Cherise Fulkes,24,2,9,11,(901) 072-8063,cherise.fulkes@yahoo.com,Y,AA,c#,hakathons,STA-81,male
+23481A0502,Heddie Lindback,24,3,5,13,(919) 545-1188,heddie.lindback@hotmail.fr,N,A,mongo db,hakathons,STA-19,female
+23481A0510,Kathe Sumpton,22,1,8,11,(240) 156-5569,kathe.sumpton@hotmail.com,N,AA,jsp,hakathons,STA-75,female
+23481A0512,Kordula Zorzoni,24,3,8,6,(954) 291-0787,kordula.zorzoni@hotmail.com,N,A,.NET,hakathons,STA-9,female
+23481A0517,Amandi Pikesley,24,2,7,1,(540) 173-0948,amandi.pikesley@gmail.com,N,AA,sales force,hakathons,STA-40,male
+23481A0504,Nicolea D'Ambrogi,18,3,6,7,(360) 924-2170,nicolea.dambrogi@aol.com,Y,A,.NET,hakathons,STA-51,female
+23481A0505,Emmy Genn,17,2,6,8,(304) 601-6680,emmy.genn@gmail.com,N,BA,sales force,hakathons,STA-21,male
+23481A0506,Erin Chrichton,24,2,9,7,(973) 021-8876,erin.chrichton@yahoo.co.uk,N,AA,jsp,hakathons,STA-80,female
+23481A0517,Caty Cod,24,3,8,15,(760) 503-0460,caty.cod@gmail.com,N,A,powerBI,hakathons,STA-8,male
+23481A0516,Kristofer Sherville,17,3,9,7,(203) 287-7509,kristofer.sherville@yahoo.com,N,BA,advanced java,hakathons,STA-88,female
+23481A0503,Henderson Sigmund,20,1,7,8,(501) 482-7878,henderson.sigmund@gmail.com,N,A,jsp,hakathons,STA-35,male
+23481A0515,Kylie Medland,18,1,6,1,(260) 339-8321,kylie.medland@yahoo.com,N,AA,full stack,hakathons,STA-27,male
+23481A0518,Cosetta Schwandner,21,3,5,11,(775) 339-9039,cosetta.schwandner@yahoo.com,Y,A,python,hakathons,STA-4,female
+23481A0507,Janey Avrahamof,23,3,7,12,(614) 360-1563,janey.avrahamof@aol.com,Y,BA,noSQL,hakathons,STA-69,male
+23481A0513,Missy McCaw,19,1,9,8,(210) 235-5261,missy.mccaw@yahoo.com,N,AA,python,hakathons,STA-61,male
+23481A0519,Junina Duligall,20,1,7,8,(303) 080-1222,junina.duligall@hotmail.com,Y,A,mongo db,hakathons,STA-10,male
+23481A0505,Frederico O'Devey,17,3,6,18,(515) 386-2877,frederico.odevey@gmail.com,N,AA,advanced java,hakathons,STA-90,male
