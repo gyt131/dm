@@ -1,0 +1,115 @@
+-- State Table
+CREATE TABLE Dim_State (
+    StateID INT PRIMARY KEY,
+    StateName VARCHAR(50)
+);
+
+-- City Table
+CREATE TABLE Dim_City (
+    CityID INT PRIMARY KEY,
+    CityName VARCHAR(50),
+    StateID INT,
+    FOREIGN KEY (StateID) REFERENCES Dim_State(StateID)
+);
+
+
+CREATE TABLE Dim_Customer_SF (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(50),
+    CityID INT,
+    FOREIGN KEY (CityID) REFERENCES Dim_City(CityID)
+);
+
+
+CREATE TABLE Dim_Product_SF (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    Category VARCHAR(50)
+);
+
+
+CREATE TABLE Dim_Store_SF (
+    StoreID INT PRIMARY KEY,
+    StoreName VARCHAR(50),
+    CityID INT,
+    FOREIGN KEY (CityID) REFERENCES Dim_City(CityID)
+);
+
+
+CREATE TABLE Dim_Time_SF (
+    TimeID INT PRIMARY KEY,
+    Day INT,
+    Month INT,
+    Year INT
+);
+
+
+CREATE TABLE Fact_Sales_SF (
+    SalesID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    StoreID INT,
+    TimeID INT,
+    Quantity INT,
+    Amount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Dim_Customer_SF(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Dim_Product_SF(ProductID),
+    FOREIGN KEY (StoreID) REFERENCES Dim_Store_SF(StoreID),
+    FOREIGN KEY (TimeID) REFERENCES Dim_Time_SF(TimeID)
+);
+INSERT INTO Dim_State VALUES (1,'Andhra Pradesh');
+INSERT INTO Dim_State VALUES (2,'Telangana');
+INSERT INTO Dim_State VALUES (3,'Karnataka');
+INSERT INTO Dim_State VALUES (4,'Tamil Nadu');
+INSERT INTO Dim_State VALUES (5,'Kerala');
+INSERT INTO Dim_State VALUES (6,'Odisha');
+INSERT INTO Dim_State VALUES (7,'Maharashtra');
+INSERT INTO Dim_State VALUES (8,'Goa');
+INSERT INTO Dim_City VALUES (1,'Machilipatnam',1);
+INSERT INTO Dim_City VALUES (2,'Vijayawada',1);
+INSERT INTO Dim_City VALUES (3,'Guntur',1);
+INSERT INTO Dim_City VALUES (4,'Nellore',1);
+INSERT INTO Dim_City VALUES (5,'Hyderabad',2);
+INSERT INTO Dim_City VALUES (6,'Bangalore',3);
+INSERT INTO Dim_City VALUES (7,'Chennai',4);
+INSERT INTO Dim_City VALUES (8,'Kochi',5);
+INSERT INTO Dim_Customer_SF VALUES (1,'Ravi',1);
+INSERT INTO Dim_Customer_SF VALUES (2,'Sita',1);
+INSERT INTO Dim_Customer_SF VALUES (3,'Kiran',2);
+INSERT INTO Dim_Customer_SF VALUES (4,'Lakshmi',2);
+INSERT INTO Dim_Customer_SF VALUES (5,'Manoj',3);
+INSERT INTO Dim_Customer_SF VALUES (6,'Anjali',3);
+INSERT INTO Dim_Customer_SF VALUES (7,'Vijay',4);
+INSERT INTO Dim_Customer_SF VALUES (8,'Radha',4);
+INSERT INTO Dim_Product_SF VALUES (1,'Rice','Grains');
+INSERT INTO Dim_Product_SF VALUES (2,'Sugar','Groceries');
+INSERT INTO Dim_Product_SF VALUES (3,'Mango','Fruits');
+INSERT INTO Dim_Product_SF VALUES (4,'Oil','Groceries');
+INSERT INTO Dim_Product_SF VALUES (5,'Wheat','Grains');
+INSERT INTO Dim_Product_SF VALUES (6,'Banana','Fruits');
+INSERT INTO Dim_Product_SF VALUES (7,'Salt','Groceries');
+INSERT INTO Dim_Product_SF VALUES (8,'Milk','Dairy');
+INSERT INTO Dim_Store_SF VALUES (1,'Machili SuperMart',1);
+INSERT INTO Dim_Store_SF VALUES (2,'Krishna Market',1);
+INSERT INTO Dim_Store_SF VALUES (3,'Guntur MegaStore',3);
+INSERT INTO Dim_Store_SF VALUES (4,'Vijaya Mall',2);
+INSERT INTO Dim_Store_SF VALUES (5,'Nellore Plaza',4);
+INSERT INTO Dim_Store_SF VALUES (6,'Hyderabad Bazaar',5);
+INSERT INTO Dim_Store_SF VALUES (7,'Bangalore Central',6);
+INSERT INTO Dim_Store_SF VALUES (8,'Chennai SuperStore',7);
+INSERT INTO Dim_Time_SF VALUES (1,21,10,2025);
+INSERT INTO Dim_Time_SF VALUES (2,22,10,2025);
+INSERT INTO Dim_Time_SF VALUES (3,23,10,2025);
+INSERT INTO Dim_Time_SF VALUES (4,24,10,2025);
+INSERT INTO Dim_Time_SF VALUES (5,25,10,2025);
+INSERT INTO Dim_Time_SF VALUES (6,26,10,2025);
+INSERT INTO Dim_Time_SF VALUES (7,27,10,2025);
+INSERT INTO Dim_Time_SF VALUES (8,28,10,2025);
+INSERT INTO Fact_Sales_SF VALUES (1,1,1,1,1,10,500.00);
+INSERT INTO Fact_Sales_SF VALUES (2,2,2,2,2,5,300.00);
+INSERT INTO Fact_Sales_SF VALUES (3,3,3,3,3,8,800.00);
+INSERT INTO Fact_Sales_SF VALUES (4,4,4,4,4,6,600.00);
+INSERT INTO Fact_Sales_SF VALUES (5,5,5,5,5,7,350.00);
+INSERT INTO Fact_Sales_SF VALUES (6,6,6,6,6,4,400.00);
+INSERT INTO Fact_Sales_SF VALUES (7,7,7,7,7,9,450.00);
+INSERT INTO Fact_Sales_SF VALUES (8,8,8,8,8,5,500.00);
