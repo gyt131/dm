@@ -1,0 +1,60 @@
+
+CREATE TABLE Dim_State (
+    StateID INT PRIMARY KEY,
+    StateName VARCHAR(50)
+);
+
+CREATE TABLE Dim_City (
+    CityID INT PRIMARY KEY,
+    CityName VARCHAR(50),
+    StateID INT,
+    FOREIGN KEY (StateID) REFERENCES Dim_State(StateID)
+);
+
+CREATE TABLE Dim_Patient_SF (
+    PatientID INT PRIMARY KEY,
+    PatientName VARCHAR(50),
+    Age INT,
+    Gender VARCHAR(10)
+);
+CREATE TABLE Dim_Department (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50)
+);
+
+CREATE TABLE Dim_Doctor_SF (
+    DoctorID INT PRIMARY KEY,
+    DoctorName VARCHAR(50),
+    DepartmentID INT,
+    FOREIGN KEY (DepartmentID) REFERENCES Dim_Department(DepartmentID)
+);
+
+
+CREATE TABLE Dim_Hospital_SF (
+    HospitalID INT PRIMARY KEY,
+    HospitalName VARCHAR(50),
+    CityID INT,
+    FOREIGN KEY (CityID) REFERENCES Dim_City(CityID)
+);
+
+CREATE TABLE Dim_Time_SF (
+    TimeID INT PRIMARY KEY,
+    Day INT,
+    Month INT,
+    Year INT
+);
+
+CREATE TABLE Fact_Visit_SF (
+    VisitID INT PRIMARY KEY,
+    PatientID INT,
+    DoctorID INT,
+    HospitalID INT,
+    TimeID INT,
+    DiagnosisCode VARCHAR(10),
+    ProceduresCount INT,
+    Cost DECIMAL(10,2),
+    FOREIGN KEY (PatientID) REFERENCES Dim_Patient_SF(PatientID),
+    FOREIGN KEY (DoctorID) REFERENCES Dim_Doctor_SF(DoctorID),
+    FOREIGN KEY (HospitalID) REFERENCES Dim_Hospital_SF(HospitalID),
+    FOREIGN KEY (TimeID) REFERENCES Dim_Time_SF(TimeID)
+);
