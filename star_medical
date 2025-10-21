@@ -1,0 +1,44 @@
+
+CREATE TABLE Dim_Patient (
+    PatientID INT PRIMARY KEY,
+    PatientName VARCHAR(50),
+    Age INT,
+    Gender VARCHAR(10)
+);
+
+CREATE TABLE Dim_Doctor (
+    DoctorID INT PRIMARY KEY,
+    DoctorName VARCHAR(50),
+    Specialty VARCHAR(50)
+);
+
+CREATE TABLE Dim_Hospital (
+    HospitalID INT PRIMARY KEY,
+    HospitalName VARCHAR(50),
+    City VARCHAR(50),
+    State VARCHAR(50)
+);
+
+CREATE TABLE Dim_Time (
+    TimeID INT PRIMARY KEY,
+    Day INT,
+    Month INT,
+    Year INT
+);
+
+CREATE TABLE Fact_Visit (
+    VisitID INT PRIMARY KEY,
+    PatientID INT,
+    DoctorID INT,
+    HospitalID INT,
+    TimeID INT,
+    DiagnosisCode VARCHAR(10),
+    ProceduresCount INT,
+    Cost DECIMAL(10,2),
+    FOREIGN KEY (PatientID) REFERENCES Dim_Patient(PatientID),
+    FOREIGN KEY (DoctorID) REFERENCES Dim_Doctor(DoctorID),
+    FOREIGN KEY (HospitalID) REFERENCES Dim_Hospital(HospitalID),
+    FOREIGN KEY (TimeID) REFERENCES Dim_Time(TimeID)
+);
+
+
